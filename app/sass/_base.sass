@@ -41,7 +41,7 @@ p
 	display: block
 .main-img-phone
 	width: 100%
-	margin-top:0px
+	margin-top: 0px
 
 /////////////
 .qa-wrapper
@@ -117,6 +117,7 @@ p
 	border-radius: 5px
 	padding: 60px 40px
 	box-sizing: border-box
+	height: 100%
 table
 	width: 100%
 	font-size: 18px
@@ -128,18 +129,38 @@ table
 	color: $black
 	width: 100%
 .main-img-phone
-		display: none
+	display: none
+.pagination
+	gap: 12px
+
+
+table.second 
+	min-width: 400px
 #my-sales
+	min-width: 850px
+	border-bottom: 0
+	margin-bottom: 24px
 	td,th
 		width: auto
 		color: $black
+	td:last-child
+
+		max-width: 140px!important
+		color: $orange
+		font-weight: 800
+
 	td
+		font-size: 16px
+		padding: 20px 0 0 0
 		border-bottom: none
+	th
+		border-bottom: 2px solid #FFA780
+		padding: 10px 0
 th
 	border-bottom: 1px solid #FFA780
 td
 	border-bottom: 1px solid #FFA780
-	padding: 10px 0
+	padding: 12px 0
 	color: $orange
 	width: 50%
 
@@ -148,7 +169,7 @@ td
 	border-radius: 8px
 	padding: 50px
 
-.tooltip 
+.tooltip
 	--bs-tooltip-opacity: 1
 
 .tooltip-inner
@@ -223,10 +244,12 @@ td
 		margin-top: -220px
 		max-width: 1920px
 		display: block
-		
+
 @media screen and (max-width: 1100px)
+	.receved-code-table__wrapper
+		overflow-x: scroll
 	body
-	
+
 		background-image: url(../img/bg/bg-phone.svg)
 		background-position: top center
 		background-repeat: no-repeat
@@ -242,7 +265,6 @@ td
 		font-size: 70px
 	.qa-wrapper
 		height: auto
-	
 
 	.qa-wrapper-scroll
 		max-height: 100%
@@ -266,6 +288,15 @@ td
 		background-size: 919px auto
 	table
 		font-size: 14px
+
+	#my-sales
+	
+
+		td
+			font-size: 14px
+			padding: 20px 0 0 0
+			border-bottom: none
+	
 	H1 
 		font-size: 48px
 	p
@@ -298,7 +329,29 @@ td
 	.contact-form
 		padding: 24px
 
+#my-sales_wrapper
+	a.page-link
+		background-color: white
+		border-radius: 48px !important
+		background: $white !important
+		width: 48px
+		height: 48px
+	
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 0
+		color: $black !important
+	.page-item.active .page-link
+		background-color: $orange!important
+		color: $white!important
+a.page-link 
+	
+
+
 @media screen and (max-width: 576px)
+	.table-wrapper
+		overflow-x: scroll
 	// .container
 	// 	width: 100%
 	// 	max-width: 100%
@@ -315,7 +368,7 @@ td
 	.lk-box
 		padding: 24px
 	.main-img-phone
-		margin-top:30px
+		margin-top: 30px
 	.add-distr
 		display: flex
 		justify-content: center

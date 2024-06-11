@@ -18,8 +18,14 @@ $(function () {
   // маска для номера телефона
   $(".mask-phone").mask("+7 (999) 999-99-99");
   $.fn.DataTable.ext.pager.numbers_length = 5;
-  $('#tableWinners').DataTable({ ordering: false, bLengthChange: false, info: false, pageLength: 6, pagingType: "numbers" });
-  $('#my-sales,#appl').DataTable({ ordering: false, bLengthChange: false, info: false, pageLength: 6, pagingType: "numbers" });
+  $('#my-sales,#appl').DataTable({
+    ordering: false, bLengthChange: false, filter: false, info: false, pageLength: 10, pagingType: "simple_numbers", language: {
+      paginate: {
+        previous: '<',
+        next: '>'
+      }
+    }
+  });
 
   $(".qa-title").click(function () {
     if ($('.qa-title').is(':visible')) {
@@ -201,11 +207,11 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 
-  $('.add-distr').click(function (){
-    
-    
-        var ele = $(this).closest('.add-distr-block').clone(true);
-    $(this).closest('.add-distr-block').after(ele);
-    $(this).remove()
-    })
-  
+$('.add-distr').click(function () {
+
+
+  var ele = $(this).closest('.add-distr-block').clone(true);
+  $(this).closest('.add-distr-block').after(ele);
+  $(this).remove()
+})
+

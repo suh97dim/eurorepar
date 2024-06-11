@@ -9,10 +9,15 @@ header.page-header
 				if page == 'index'
 					a.btn.btn-white-border(type="button" data-bs-toggle="modal" data-bs-target="#modal-enter")
 						span Личный кабинет
-				else 
-					a.btn.btn-white-border(href="#" onclick="logout();")
+				else
+				div.d-flex 
+					div.user-name.d-none.d-md-inline
 						+img('icons/user.svg','','mr-10','выйти')
-						span ЕВгения
+						span Евгения
+					button.btn-logout.ml-4(href="#" onclick="logout();")
+						+img('icons/logout.svg','','mr-10','выйти')
+					
+					
 
 
 

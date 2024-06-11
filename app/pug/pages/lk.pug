@@ -25,9 +25,9 @@ block content
                             tr
                                 th Август
                                 td 100 баллов
-                    span.position-relative 
+                    div.position-relative 
                         H2.c-orange.text-center.my-30 570 баллов
-                        span.info-icon(data-bs-toggle="tooltip" data-bs-placement="bottom" title="Сейчас нет доступных сертификатов для скачивания")
+                        span.info-icon(data-bs-toggle="tooltip" data-bs-placement="bottom" title="1(один) балл = 1 (один) рубль")
                             +img('icons/info.svg','' ,'','' )
 
                     P.c-black Минимальное количество баллов, доступных для обмена на подарочные; сертификаты OZON, составляет 500. При оформлении сертификатов, кратных 500 рублей, округление будет происходить в меньшую сторону.
@@ -43,106 +43,24 @@ block content
                         |  Скачать сертификат
             .col-lg-7.mt-lg-0.mt-md-30.mt-12
                 .lk-box  
-                    table
-                        tbody
-                            tr
-                                th E-mail
-                                td electronnya_pochta@gmail.com
-                            tr
-                                th Наименование торговой точки
-                                td Название торговой точки
-                            tr
-                                th Адрес торговой точки
-                                td г. Краснодар, ул. Красная, 178, к. 5, оф. 387
-                            tr
-                                th ИНН торговой точки
-                                td 257328523873259
-                            tr
-                                th Дистрибьютор <br> ID участника <br> ИНН дистрибьютора
-                                td Название дистрибьютора <br> 3453456345 <br> 4278536832758327582
-        .row.mt-lg-50.mt-md-30.mt-12
-            .col-12
-                .lk-box
-                    H2.c-orange.text-center Мои продажи
-                    P.c-black.text-center.mt-40 К сожалению, нет продаж на данный момент 
-                    .row 
-                    .col-12 
-                        .receved-code-table__wrapper
-                            table#my-sales.receved-code-table
-                                thead
-                                    tr
-                                        th.nowrap.date-appl Дата продажи
-                                        th.nowrap.num-appl Дистрибьютор
-                                        th.nowrap.date-event Артикул
-                                        th.nowrap.type-event Наименование запчасти
-                                        th.status-event Кол-во баллов
-                                tbody
-                                    tr
-                                        td 02.06.2024
-                                        td Название дистрибьютора
-                                        td 4628919562
-                                        td Тормозные механизмы в сборе
-                                        td + 10
-                                    tr
-                                        td 14.12.2023
-                                        td <span class="font-arial"> №</span> 12755246
-                                        td 383732 / 344546 / ......
-                                        td 
-                                            a(href="img/fiskal.jpg" data-fancybox="image")
-
-                                                |Смотреть
-                                        td
-                                            .status.status_proof Подтвержден
-                                    tr
-                                        td 14.12.2023
-                                        td <span class="font-arial"> №</span> 12755246
-                                        td 383732 / 344546 / ......
-                                        td 
-                                            a(href="img/fiskal.jpg" data-fancybox="image")
-
-                                                |Смотреть
-                                        td
-                                            .status.status_canceled Отклонено
-                                    tr
-                                        td 14.12.2023
-                                        td <span class="font-arial"> №</span> 12755246
-                                        td 383732 / 344546 / ......
-                                        td 
-                                            a(href="img/fiskal.jpg" data-fancybox="image")
-
-                                                |Смотреть
-                                        td
-                                            .status.status_wait В процессе
-                                    tr
-                                        td 14.12.2023
-                                        td <span class="font-arial"> №</span> 12755246
-                                        td 383732 / 344546 / ......
-                                        td 
-                                            a(href="img/fiskal.jpg" data-fancybox="image")
-
-                                                |Смотреть
-                                        td
-                                            .status.status_wait В процессе
-                                    tr
-                                        td 14.12.2023
-                                        td <span class="font-arial"> №</span> 12755246
-                                        td 383732 / 344546 / ......
-                                        td 
-                                            a(href="img/fiskal.jpg" data-fancybox="image")
-
-                                                |Смотреть
-                                        td
-                                            .status.status_wait В процессе
-                                    tr
-                                        td 14.12.2023
-                                        td <span class="font-arial"> №</span> 12755246
-                                        td 383732 / 344546 / ......
-                                        td 
-                                            a(href="img/fiskal.jpg" data-fancybox="image")
-
-                                                |Смотреть
-                                        td
-                                            .status.status_wait В процессе 
+                    .table-wrapper 
+                        table.second
+                            tbody
+                                tr
+                                    th E-mail
+                                    td electronnya_pochta@gmail.com
+                                tr
+                                    th Наименование торговой точки
+                                    td Название торговой точки
+                                tr
+                                    th Адрес торговой точки
+                                    td г. Краснодар, ул. Красная, 178, к. 5, оф. 387
+                                tr
+                                    th ИНН торговой точки
+                                    td 257328523873259
+                                tr
+                                    th Дистрибьютор <br> ID участника <br> ИНН дистрибьютора
+                                    td Название дистрибьютора <br> 3453456345 <br> 4278536832758327582
         .row.mt-lg-50.mt-md-30.mt-12
             .col-12
                 .lk-box
@@ -171,7 +89,308 @@ block content
                             .download-success 
                                 +img('icons/download-success.svg','' ,'','' )
                                 span.mt-24 Акт успешно загружен и находится на проверке!
+
         .row.mt-lg-50.mt-md-30.mt-12
+            .col-12
+                .lk-box
+                    H2.c-orange.text-center Мои продажи
+                    .row.mt-40 
+                        .col-12 
+                            .receved-code-table__wrapper
+                                table#my-sales.receved-code-table
+                                    thead
+                                        tr
+                                            th.nowrap.date-appl Дата продажи
+                                            th.nowrap.num-appl Дистрибьютор
+                                            th.nowrap.date-event Артикул
+                                            th.nowrap.type-event Наименование запчасти
+                                            th.status-event Кол-во баллов
+                                    tbody
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+                                        tr
+                                            td 02.06.2024
+                                            td Название дистрибьютора
+                                            td 4628919562
+                                            td Тормозные механизмы в сборе
+                                            td + 10
+
+
+        .row.mt-lg-50.mt-md-30.mt-12.mb-40
             .col-12
                 .lk-box
                     H2.c-orange.text-center Вопросы и ответы
@@ -204,20 +423,24 @@ block content
                             .contact-form
                                 h3 Задать вопрос
                                 p.fw-16 Наши специалисты ответят на него в ближайшее время
-                                form(action="").validate.mt-10 
-                                    .col-sm-12.mb-24
-                                        input(type="text" placeholder="Отчество" required ).form-control
-                                        .invalid-feedback ФИО
-                                    .col-sm-12.mb-24
-                                        input(type="text" placeholder="E-mail" required ).form-control
-                                        .invalid-feedback E-mail
-                                    .col-sm-12.mb-24
-                                        textarea(type="text" placeholder="E-mail" required ).form-control
-                                        .invalid-feedback E-mail
+                                form(action="").row.needs-validation(novalidate)
+                                    .col-sm-12.mb-md-24.mb-12
+                                        input(type="text" placeholder="ФИО" required ).form-control
+                                        .invalid-feedback 
+                                            .c-white Укажите ФИО
+                                    .col-sm-12.mb-md-24.mb-12
+                                        input(type="email" placeholder="E-mail" required ).form-control
+                                        .invalid-feedback 
+                                            .c-white Укажите e-mail
+                                    .col-sm-12.mb-md-24.mb-12
+                                        textarea(type="text" placeholder="Вопрос" required ).form-control
+                                        .invalid-feedback 
+                                            .c-white Укажите вопрос
                                     .col-sm-12.mb-6
                                         label.checkbox
                                             input(type="checkbox" required).radio-input.mr-10
                                             span.checkbox__text(style="font-size:13px;color:white") Я согласен (-а)  на обработку персональных данных 
-                                            .invalid-feedback Подтвердите согласие с пользовательским соглашением и политикой конфиденциальности
+                                            .invalid-feedback
+                                                .c-white Подтвердите согласие с пользовательским соглашением и политикой конфиденциальности
                                     .col-sm-12.mb-6
                                         button.btn.btn-black-fill.w-100.mt-12(type="submit")  Зарегистрироваться           

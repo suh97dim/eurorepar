@@ -25,7 +25,13 @@
         <div class="container header-container"> 
           <div class="row ai-c jc-sb">
             <div class="col-auto"><a href="/"><img class="logo-img" src="img/logo.svg" alt="Логотип"/></a></div>
-            <div class="col-auto"><a class="btn btn-white-border" href="#" onclick="logout();"><img class="mr-10" src="img/icons/user.svg" alt=""/><span>ЕВгения</span></a>
+            <div class="col-auto">
+              <div class="d-flex"> 
+                <div class="user-name d-none d-md-inline"><img class="mr-10" src="img/icons/user.svg" alt=""/><span>Евгения</span>
+                </div>
+                <button class="btn-logout ml-4" href="#" onclick="logout();"><img class="mr-10" src="img/icons/logout.svg" alt=""/>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -54,8 +60,10 @@
                     <td>100 баллов</td>
                   </tr>
                 </tbody>
-              </table><span class="position-relative"> 
-                <H2 class="c-orange text-center my-30">570 баллов</H2><span class="info-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Сейчас нет доступных сертификатов для скачивания"><img src="img/icons/info.svg" alt=""/></span></span>
+              </table>
+              <div class="position-relative"> 
+                <H2 class="c-orange text-center my-30">570 баллов</H2><span class="info-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="1(один) балл = 1 (один) рубль"><img src="img/icons/info.svg" alt=""/></span>
+              </div>
               <P class="c-black">Минимальное количество баллов, доступных для обмена на подарочные; сертификаты OZON, составляет 500. При оформлении сертификатов, кратных 500 рублей, округление будет происходить в меньшую сторону.</P><a class="btn btn-orange-border w-100" type="button" href=""> <img class="mr-16 mb-4" src="img/icons/product-list.svg" alt=""/>Список продукции</a><a class="btn btn-orange-fill w-100 mt-20" type="button" href=""><img class="mr-16  mb-4" src="img/icons/download-ser.svg" alt=""/> Скачать сертификат</a>
               <button class="btn btn-orange-fill w-100 mt-20 disable" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Сейчас нет доступных сертификатов для скачивания"> <img class="mr-16  mb-4" src="img/icons/download-ser.svg" alt=""/> Скачать сертификат
               </button>
@@ -63,116 +71,31 @@
           </div>
           <div class="col-lg-7 mt-lg-0 mt-md-30 mt-12">
             <div class="lk-box"> 
-              <table>
-                <tbody>
-                  <tr>
-                    <th>E-mail</th>
-                    <td>electronnya_pochta@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <th>Наименование торговой точки</th>
-                    <td>Название торговой точки</td>
-                  </tr>
-                  <tr>
-                    <th>Адрес торговой точки</th>
-                    <td>г. Краснодар, ул. Красная, 178, к. 5, оф. 387</td>
-                  </tr>
-                  <tr>
-                    <th>ИНН торговой точки</th>
-                    <td>257328523873259</td>
-                  </tr>
-                  <tr>
-                    <th>Дистрибьютор <br> ID участника <br> ИНН дистрибьютора</th>
-                    <td>Название дистрибьютора <br> 3453456345 <br> 4278536832758327582</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-lg-50 mt-md-30 mt-12">
-          <div class="col-12">
-            <div class="lk-box">
-              <H2 class="c-orange text-center">Мои продажи</H2>
-              <P class="c-black text-center mt-40">К сожалению, нет продаж на данный момент </P>
-              <div class="row"> </div>
-              <div class="col-12"> 
-                <div class="receved-code-table__wrapper">
-                  <table class="receved-code-table" id="my-sales">
-                    <thead>
-                      <tr>
-                        <th class="nowrap date-appl">Дата продажи</th>
-                        <th class="nowrap num-appl">Дистрибьютор</th>
-                        <th class="nowrap date-event">Артикул</th>
-                        <th class="nowrap type-event">Наименование запчасти</th>
-                        <th class="status-event">Кол-во баллов</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>02.06.2024</td>
-                        <td>Название дистрибьютора</td>
-                        <td>4628919562</td>
-                        <td>Тормозные механизмы в сборе</td>
-                        <td>+ 10</td>
-                      </tr>
-                      <tr>
-                        <td>14.12.2023</td>
-                        <td><span class="font-arial"> №</span> 12755246</td>
-                        <td>383732 / 344546 / ......</td>
-                        <td> <a href="img/fiskal.webp" data-fancybox="image">Смотреть</a></td>
-                        <td>
-                          <div class="status status_proof">Подтвержден</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>14.12.2023</td>
-                        <td><span class="font-arial"> №</span> 12755246</td>
-                        <td>383732 / 344546 / ......</td>
-                        <td> <a href="img/fiskal.webp" data-fancybox="image">Смотреть</a></td>
-                        <td>
-                          <div class="status status_canceled">Отклонено</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>14.12.2023</td>
-                        <td><span class="font-arial"> №</span> 12755246</td>
-                        <td>383732 / 344546 / ......</td>
-                        <td> <a href="img/fiskal.webp" data-fancybox="image">Смотреть</a></td>
-                        <td>
-                          <div class="status status_wait">В процессе</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>14.12.2023</td>
-                        <td><span class="font-arial"> №</span> 12755246</td>
-                        <td>383732 / 344546 / ......</td>
-                        <td> <a href="img/fiskal.webp" data-fancybox="image">Смотреть</a></td>
-                        <td>
-                          <div class="status status_wait">В процессе</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>14.12.2023</td>
-                        <td><span class="font-arial"> №</span> 12755246</td>
-                        <td>383732 / 344546 / ......</td>
-                        <td> <a href="img/fiskal.webp" data-fancybox="image">Смотреть</a></td>
-                        <td>
-                          <div class="status status_wait">В процессе</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>14.12.2023</td>
-                        <td><span class="font-arial"> №</span> 12755246</td>
-                        <td>383732 / 344546 / ......</td>
-                        <td> <a href="img/fiskal.webp" data-fancybox="image">Смотреть</a></td>
-                        <td>
-                          <div class="status status_wait">В процессе </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="table-wrapper"> 
+                <table class="second">
+                  <tbody>
+                    <tr>
+                      <th>E-mail</th>
+                      <td>electronnya_pochta@gmail.com</td>
+                    </tr>
+                    <tr>
+                      <th>Наименование торговой точки</th>
+                      <td>Название торговой точки</td>
+                    </tr>
+                    <tr>
+                      <th>Адрес торговой точки</th>
+                      <td>г. Краснодар, ул. Красная, 178, к. 5, оф. 387</td>
+                    </tr>
+                    <tr>
+                      <th>ИНН торговой точки</th>
+                      <td>257328523873259</td>
+                    </tr>
+                    <tr>
+                      <th>Дистрибьютор <br> ID участника <br> ИНН дистрибьютора</th>
+                      <td>Название дистрибьютора <br> 3453456345 <br> 4278536832758327582</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
@@ -223,6 +146,361 @@
         <div class="row mt-lg-50 mt-md-30 mt-12">
           <div class="col-12">
             <div class="lk-box">
+              <H2 class="c-orange text-center">Мои продажи</H2>
+              <div class="row mt-40"> 
+                <div class="col-12"> 
+                  <div class="receved-code-table__wrapper">
+                    <table class="receved-code-table" id="my-sales">
+                      <thead>
+                        <tr>
+                          <th class="nowrap date-appl">Дата продажи</th>
+                          <th class="nowrap num-appl">Дистрибьютор</th>
+                          <th class="nowrap date-event">Артикул</th>
+                          <th class="nowrap type-event">Наименование запчасти</th>
+                          <th class="status-event">Кол-во баллов</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                        <tr>
+                          <td>02.06.2024</td>
+                          <td>Название дистрибьютора</td>
+                          <td>4628919562</td>
+                          <td>Тормозные механизмы в сборе</td>
+                          <td>+ 10</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-lg-50 mt-md-30 mt-12 mb-40">
+          <div class="col-12">
+            <div class="lk-box">
               <H2 class="c-orange text-center">Вопросы и ответы</H2>
               <div class="row mt-40"> 
                 <div class="col-md-12 col-lg-6"> 
@@ -263,23 +541,31 @@
                   <div class="contact-form">
                     <h3>Задать вопрос</h3>
                     <p class="fw-16">Наши специалисты ответят на него в ближайшее время</p>
-                    <form class="validate mt-10" action=""> 
-                      <div class="col-sm-12 mb-24">
-                        <input class="form-control" type="text" placeholder="Отчество" required>
-                        <div class="invalid-feedback">ФИО</div>
+                    <form class="row needs-validation" action="" novalidate>
+                      <div class="col-sm-12 mb-md-24 mb-12">
+                        <input class="form-control" type="text" placeholder="ФИО" required>
+                        <div class="invalid-feedback"> 
+                          <div class="c-white">Укажите ФИО</div>
+                        </div>
                       </div>
-                      <div class="col-sm-12 mb-24">
-                        <input class="form-control" type="text" placeholder="E-mail" required>
-                        <div class="invalid-feedback">E-mail</div>
+                      <div class="col-sm-12 mb-md-24 mb-12">
+                        <input class="form-control" type="email" placeholder="E-mail" required>
+                        <div class="invalid-feedback"> 
+                          <div class="c-white">Укажите e-mail</div>
+                        </div>
                       </div>
-                      <div class="col-sm-12 mb-24">
-                        <textarea class="form-control" type="text" placeholder="E-mail" required></textarea>
-                        <div class="invalid-feedback">E-mail</div>
+                      <div class="col-sm-12 mb-md-24 mb-12">
+                        <textarea class="form-control" type="text" placeholder="Вопрос" required></textarea>
+                        <div class="invalid-feedback"> 
+                          <div class="c-white">Укажите вопрос</div>
+                        </div>
                       </div>
                       <div class="col-sm-12 mb-6">
                         <label class="checkbox">
                           <input class="radio-input mr-10" type="checkbox" required><span class="checkbox__text" style="font-size:13px;color:white">Я согласен (-а)  на обработку персональных данных </span>
-                          <div class="invalid-feedback">Подтвердите согласие с пользовательским соглашением и политикой конфиденциальности</div>
+                          <div class="invalid-feedback">
+                            <div class="c-white">Подтвердите согласие с пользовательским соглашением и политикой конфиденциальности</div>
+                          </div>
                         </label>
                       </div>
                       <div class="col-sm-12 mb-6">

@@ -1,5 +1,5 @@
 
-.btn
+.btn,.user-name
     padding: 22px 35px
     text-align: center
     font-size: 18px
@@ -8,6 +8,14 @@
     font-weight: 600
     display: block
     width: max-content
+
+.user-name
+    border: 1px solid $white
+    color: $white
+.btn-logout
+    background-color: transparent
+    border: none
+
 
 
 .btn-white-border
@@ -48,20 +56,23 @@
    
 
 @media screen and (max-width: 1440px)
-    .btn
+    .btn,.user-name
         padding: 16px 25px
 
 @media screen and (max-width: 768px)
-    .btn
+    .btn,.user-name
         padding: 12px 20px
         text-align: center
         font-size: 14px
         text-transform: uppercase
         border-radius: 0  
+    .btn-logout
+        img
+            width: 40px
 
 @media screen and (max-width: 575px)
     .page-header
-        .btn
+        .btn,.user-name
             padding: 10px 16px
             text-align: center
             font-size: 12px
@@ -72,4 +83,7 @@
         text-align: center
         font-size: 14px
         text-transform: uppercase
-        border-radius: 0         
+        border-radius: 0      
+    .btn-logout
+        img
+            width: 40px   

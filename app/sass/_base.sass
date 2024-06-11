@@ -1,0 +1,325 @@
+body
+	color: $gray
+	font-family: 'Lato'
+	text-rendering: optimizeLegibility !important
+	-webkit-font-smoothing: antialiased !important
+	-moz-osx-font-smoothing: grayscale !important
+	background-color: $gray
+	background-image: url(../img/bg/bg.svg)
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: 1920px auto
+
+H1
+	font-family: 'Gotham Pro'
+	font-size: 100px
+	line-height: 110%
+	font-weight: 900
+
+H2
+	font-family: 'Gotham Pro'
+	font-size: 50px
+	line-height: 110%
+	font-weight: 900
+H3
+	font-family: 'Gotham Pro'
+	font-size: 32px
+	line-height: 110%
+	font-weight: 900
+.main-text
+	font-family: 'Gotham Pro'
+	font-size: 100px
+	line-height: 110%
+	font-weight: 900
+p
+	font-size: 18px
+.main-img
+	width: 100%
+	margin: 0 auto
+	margin-top: -270px
+	max-width: 1920px
+	display: block
+.main-img-phone
+	width: 100%
+	margin-top:0px
+
+/////////////
+.qa-wrapper
+	height: 680px
+.qa-wrapper-scroll
+	max-height: 100%
+	overflow-y: scroll
+	padding-right: 15px
+.qa-item
+	border: 1px solid #EFA38E
+	margin-bottom: 8px
+	padding: 0 0 0 20px
+	color: $black
+	font-size: 16px
+	background-color: #F5F6F6
+	.qa-title
+		background-image: url(../img/icons/qa-open.svg)
+		background-repeat: no-repeat
+		background-position: 0 14px
+		cursor: pointer
+
+		padding: 14px 20px 14px 50px
+
+	.qa-details
+		padding: 0 25px 25px 50px
+		display: none
+		line-height: 130%
+
+.qa-item.default-active
+	.qa-details
+		display: block
+.qa-item.active
+	.qa-title
+		font-weight: 600
+		background-image: url(../img/icons/qa-close.svg)
+
+.qa-wrapper-scroll
+	&::-webkit-scrollbar-button
+		background-image: url("")
+		background-repeat: no-repeat
+		width: 5px
+		height: 0px
+
+.qa-wrapper-scroll
+	&::-webkit-scrollbar-track
+		background-color: #ecedee
+
+.qa-wrapper-scroll
+	&::-webkit-scrollbar-thumb
+		-webkit-border-radius: 2px
+		border-radius: 2px
+		background-color: #CFCFCF
+
+.qa-wrapper-scroll
+	&::-webkit-scrollbar-thumb:hover
+		cursor: pointer !important
+		background-color: #CFCFCF
+
+.qa-wrapper-scroll
+	&::-webkit-resizer
+		background-image: url("")
+		background-repeat: no-repeat
+		width: 4px
+		height: 0px
+
+.qa-wrapper-scroll
+	&::-webkit-scrollbar
+		width: 4px
+//////////////////
+
+.lk-box
+	background-color: $white
+	border-radius: 5px
+	padding: 60px 40px
+	box-sizing: border-box
+table
+	width: 100%
+	font-size: 18px
+	font-family: 'Lato'
+	font-weight: 600
+
+	border-bottom: 1px solid #FFA780
+	padding: 10px 0
+	color: $black
+	width: 100%
+.main-img-phone
+		display: none
+#my-sales
+	td,th
+		width: auto
+		color: $black
+	td
+		border-bottom: none
+th
+	border-bottom: 1px solid #FFA780
+td
+	border-bottom: 1px solid #FFA780
+	padding: 10px 0
+	color: $orange
+	width: 50%
+
+.contact-form
+	background-color: $orange
+	border-radius: 8px
+	padding: 50px
+
+.tooltip 
+	--bs-tooltip-opacity: 1
+
+.tooltip-inner
+	background-color: $orange
+	max-width: 236px
+	font-size: 14px
+	padding: 14px
+	opacity: 1
+	border-radius: 0
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before, .bs-tooltip-bottom .tooltip-arrow::before
+
+	border-bottom-color: $orange
+
+.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before, .bs-tooltip-left .tooltip-arrow::before
+
+	border-left-color: $orange
+
+.info-icon
+	position: absolute
+	top: 0
+	right: 0
+
+.download-success
+	background: linear-gradient(67deg, #FF2300 11.78%, #FF4F00 20.26%, #FF8300 30.93%, #F50 52.77%, #FF4800 68.49%, #FF2F00 77.72%)
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	border-radius: 5px
+	text-align: center
+	padding: 24px
+	box-sizing: border-box
+.add-distr
+	display: flex
+	cursor: pointer
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	color: $orange
+	height: 100%
+	text-decoration: underline
+.add-distr-block
+	padding: 0
+	display: flex
+	flex-wrap: wrap
+@media screen and (max-width: 1440px)
+
+	body
+		color: $gray
+		font-family: 'Lato'
+		text-rendering: optimizeLegibility !important
+		-webkit-font-smoothing: antialiased !important
+		-moz-osx-font-smoothing: grayscale !important
+		background-color: $gray
+		background-image: url(../img/bg/bg.svg)
+		background-position: top center
+		background-repeat: no-repeat
+		background-size: 1600px auto
+	h1
+		font-family: 'Gotham Pro'
+		font-size: 70px
+	H2
+		font-family: 'Gotham Pro'
+		font-size: 50px
+	.main-text
+		font-size: 70px
+	.main-img
+		width: 100%
+		margin: 0 auto
+		margin-top: -220px
+		max-width: 1920px
+		display: block
+		
+@media screen and (max-width: 1100px)
+	body
+	
+		background-image: url(../img/bg/bg-phone.svg)
+		background-position: top center
+		background-repeat: no-repeat
+		background-size: 1200px auto
+	.main-img-phone
+		display: block
+	table
+		font-size: 16px
+	h1
+		font-family: 'Gotham Pro'
+		font-size: 48px
+	.main-text
+		font-size: 70px
+	.qa-wrapper
+		height: auto
+	
+
+	.qa-wrapper-scroll
+		max-height: 100%
+		overflow-y: auto
+		padding-right: 0
+	.main-img
+		display: none
+
+@media screen and (max-width: 768px)
+
+	body
+		color: $gray
+		font-family: 'Lato'
+		text-rendering: optimizeLegibility !important
+		-webkit-font-smoothing: antialiased !important
+		-moz-osx-font-smoothing: grayscale !important
+		background-color: $gray
+		background-image: url(../img/bg/bg-phone.svg)
+		background-position: top center
+		background-repeat: no-repeat
+		background-size: 919px auto
+	table
+		font-size: 14px
+	H1 
+		font-size: 48px
+	p
+		font-size: 16px
+	H2
+		font-family: 'Gotham Pro'
+		font-size: 32px
+	.lk-box
+		padding: 24px
+	.main-text
+		font-size: 44px
+	.qa-item
+		border: 1px solid #EFA38E
+		margin-bottom: 4px
+		padding: 0 0 0 20px
+		color: $black
+		font-size: 16px
+		background-color: #F5F6F6
+		.qa-title
+			background-image: url(../img/icons/qa-open.svg)
+			background-repeat: no-repeat
+			background-position: 0 10px
+			cursor: pointer
+			padding: 11px 16px 11px 40px
+
+		.qa-details
+			padding: 0 25px 25px 50px
+			display: none
+			line-height: 130%
+	.contact-form
+		padding: 24px
+
+@media screen and (max-width: 576px)
+	// .container
+	// 	width: 100%
+	// 	max-width: 100%
+	h1
+		font-family: 'Gotham Pro'
+		font-size: 32px
+	H2
+		font-family: 'Gotham Pro'
+		font-size: 24px
+	.main-text
+		font-size: 34px
+	p
+		font-size: 16px
+	.lk-box
+		padding: 24px
+	.main-img-phone
+		margin-top:30px
+	.add-distr
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		flex-direction: column
+		color: $orange
+		height: 100%

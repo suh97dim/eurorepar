@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="msapplication-TileColor" content="undefined">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="msapplication-TileImage" content="">
+    <meta name="theme-color" content="undefined">
+    <meta name="msapplication-navbutton-color" content="undefined">
+    <meta name="apple-mobile-web-app-status-bar-style" content="undefined">
+    <meta name="description" content="undefined">
+    <title>Личный кабинет</title>
+    <link type="image/x-icon" href="favicon.ico" rel="icon">
+    <link type="image/svg+xml" href="#" rel="icon">
+    <link href="#" rel="apple-touch-icon">
+    <link href="#" color="undefined" rel="mask-icon">
+    <link type="text/css" href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="libs/datepicker-bootstrap/datepicker.min.css" rel="stylesheet">
+    <link type="text/css" href="libs/croppie/croppie.css" rel="stylesheet">
+    <link type="text/css" href="libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link type="text/css" href="libs/fancybox/fancybox.css" rel="stylesheet">
+    <link type="text/css" href="css/main.min.css" rel="stylesheet">
+    <body>
+      <header class="page-header">
+        <div class="container header-container"> 
+          <div class="row ai-c jc-sb">
+            <div class="col-auto"><a href="/"><img class="logo-img" src="img/logo.svg" alt="Логотип"/></a></div>
+            <div class="col-auto"><a class="btn btn-white-border" href="#" onclick="logout();"><img class="mr-10" src="img/icons/user.svg" alt=""/><span>ЕВгения</span></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container"> 
+        <div class="row">
+          <div class="col"> 
+            <h1 class="mt-50 text-center c-white">Личный кабинет</h1>
+          </div>
+        </div>
+        <div class="row mt-md-50 mt-24">
+          <div class="col-lg-5">
+            <div class="lk-box">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>Июнь</th>
+                    <td>150 баллов</td>
+                  </tr>
+                  <tr>
+                    <th>Июль</th>
+                    <td>320 баллов</td>
+                  </tr>
+                  <tr>
+                    <th>Август</th>
+                    <td>100 баллов</td>
+                  </tr>
+                </tbody>
+              </table><span class="position-relative"> 
+                <H2 class="c-orange text-center my-30">570 баллов</H2><span class="info-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Сейчас нет доступных сертификатов для скачивания"><img src="img/icons/info.svg" alt=""/></span></span>
+              <P class="c-black">Минимальное количество баллов, доступных для обмена на подарочные; сертификаты OZON, составляет 500. При оформлении сертификатов, кратных 500 рублей, округление будет происходить в меньшую сторону.</P><a class="btn btn-orange-border w-100" type="button" href=""> <img class="mr-16 mb-4" src="img/icons/product-list.svg" alt=""/>Список продукции</a><a class="btn btn-orange-fill w-100 mt-20" type="button" href=""><img class="mr-16  mb-4" src="img/icons/download-ser.svg" alt=""/> Скачать сертификат</a>
+              <button class="btn btn-orange-fill w-100 mt-20 disable" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Сейчас нет доступных сертификатов для скачивания"> <img class="mr-16  mb-4" src="img/icons/download-ser.svg" alt=""/> Скачать сертификат
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-7 mt-lg-0 mt-md-30 mt-12">
+            <div class="lk-box"> 
+              <table>
+                <tbody>
+                  <tr>
+                    <th>E-mail</th>
+                    <td>electronnya_pochta@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <th>Наименование торговой точки</th>
+                    <td>Название торговой точки</td>
+                  </tr>
+                  <tr>
+                    <th>Адрес торговой точки</th>
+                    <td>г. Краснодар, ул. Красная, 178, к. 5, оф. 387</td>
+                  </tr>
+                  <tr>
+                    <th>ИНН торговой точки</th>
+                    <td>257328523873259</td>
+                  </tr>
+                  <tr>
+                    <th>Дистрибьютор <br> ID участника <br> ИНН дистрибьютора</th>
+                    <td>Название дистрибьютора <br> 3453456345 <br> 4278536832758327582</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-lg-50 mt-md-30 mt-12">
+          <div class="col-12">
+            <div class="lk-box">
+              <H2 class="c-orange text-center">Мои продажи</H2>
+              <P class="c-black text-center mt-40">К сожалению, нет продаж на данный момент </P>
+              <div class="row"> </div>
+              <div class="col-12"> 
+                <div class="receved-code-table__wrapper">
+                  <table class="receved-code-table" id="my-sales">
+                    <thead>
+                      <tr>
+                        <th class="nowrap date-appl">Дата продажи</th>
+                        <th class="nowrap num-appl">Дистрибьютор</th>
+                        <th class="nowrap date-event">Артикул</th>
+                        <th class="nowrap type-event">Наименование запчасти</th>
+                        <th class="status-event">Кол-во баллов</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>02.06.2024</td>
+                        <td>Название дистрибьютора</td>
+                        <td>4628919562</td>
+                        <td>Тормозные механизмы в сборе</td>
+                        <td>+ 10</td>
+                      </tr>
+                      <tr>
+                        <td>14.12.2023</td>
+                        <td><span class="font-arial"> №</span> 12755246</td>
+                        <td>383732 / 344546 / ......</td>
+                        <td> <a href="img/fiskal.webp" data-fancybox="image">Смотреть</a></td>
+                        <td>
+                          <div class="status status_proof">Подтвержден</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>14.12.2023</td>
+                        <td><span class="font-arial"> №</span> 12755246</td>
+                        <td>383732 / 344546 / ......</td>
+                        <td> <a href="img/fiskal.webp" data-fancybox="image">Смотреть</a></td>
+                        <td>
+                          <div class="status status_canceled">Отклонено</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>14.12.2023</td>
+                        <td><span class="font-arial"> №</span> 12755246</td>
+                        <td>383732 / 344546 / ......</td>
+                        <td> <a href="img/fiskal.webp" data-fancybox="image">Смотреть</a></td>
+                        <td>
+                          <div class="status status_wait">В процессе</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>14.12.2023</td>
+                        <td><span class="font-arial"> №</span> 12755246</td>
+                        <td>383732 / 344546 / ......</td>
+                        <td> <a href="img/fiskal.webp" data-fancybox="image">Смотреть</a></td>
+                        <td>
+                          <div class="status status_wait">В процессе</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>14.12.2023</td>
+                        <td><span class="font-arial"> №</span> 12755246</td>
+                        <td>383732 / 344546 / ......</td>
+                        <td> <a href="img/fiskal.webp" data-fancybox="image">Смотреть</a></td>
+                        <td>
+                          <div class="status status_wait">В процессе</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>14.12.2023</td>
+                        <td><span class="font-arial"> №</span> 12755246</td>
+                        <td>383732 / 344546 / ......</td>
+                        <td> <a href="img/fiskal.webp" data-fancybox="image">Смотреть</a></td>
+                        <td>
+                          <div class="status status_wait">В процессе </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-lg-50 mt-md-30 mt-12">
+          <div class="col-12">
+            <div class="lk-box">
+              <H2 class="c-orange text-center">Мои продажи</H2>
+              <P class="c-black text-center mt-40">К сожалению, нет продаж на данный момент  </P>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-lg-50 mt-md-30 mt-12">
+          <div class="col-12">
+            <div class="lk-box">
+              <div class="row"> 
+                <div class="col-lg-6">
+                  <H2 class="c-orange">Сертификат OZON</H2>
+                  <P class="c-black mt-24">Скачайте акт прием-передачи сертфиикат OZON, оставьте подпись в поле “подпись Участника” и заругите заполненный сертификат в поле для загрузки</P>
+                  <button class="btn btn-black-fill w-100 mt-24 mt-md-40" type="submit">скачать акт приема-передачи</button>
+                </div>
+                <div class="col-lg-6 mt-24 mt-lg-0"> 
+                  <div class="file-upload">
+                    <input class="bootstrap-file-upload" type="file" data-browse-on-zone-click="true">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-lg-50 mt-md-30 mt-12">
+          <div class="col-12">
+            <div class="lk-box">
+              <div class="row"> 
+                <div class="col-lg-6">
+                  <H2 class="c-orange">Сертификат OZON</H2>
+                  <P class="c-black mt-24">Скачайте акт прием-передачи сертфиикат OZON, оставьте подпись в поле “подпись Участника” и заругите заполненный сертификат в поле для загрузки</P>
+                  <button class="btn btn-black-fill w-100 mt-24 mt-md-40" type="submit">скачать акт приема-передачи</button>
+                </div>
+                <div class="col-lg-6 mt-24 mt-lg-0"> 
+                  <div class="download-success"> <img src="img/icons/download-success.svg" alt=""/><span class="mt-24">Акт успешно загружен и находится на проверке!</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-lg-50 mt-md-30 mt-12">
+          <div class="col-12">
+            <div class="lk-box">
+              <H2 class="c-orange text-center">Вопросы и ответы</H2>
+              <div class="row mt-40"> 
+                <div class="col-md-12 col-lg-6"> 
+                  <div class="qa-wrapper" id="faqData">
+                    <div class="qa-wrapper-scroll"> 
+                      <div class="qa-item default-active active">
+                        <div class="qa-title">В какие сроки проводится Акция? </div>
+                        <div class="qa-details">Призы, стоимость которых превышает 4 000 (четыре тысячи) руб., облагаются налогом в размере 35%.Налог на Еженедельные призы, Приз за участие в конкурсе в интерактиве и Главный приз оплачивает организатор акции, который, как налоговый агент, на основании поручения от победителя, удержит в соответствие с требованиями законодательства РФ НДФЛ по ставке 35%.Гарантированные приз в виде баллов на счет карты лояльности «Х5 Клуб» не облагаются налогом в соответствии со ст. 217 НК РФ.  </div>
+                      </div>
+                      <div class="qa-item">
+                        <div class="qa-title">Какой продукт необходимо купить, чтобы принять участие? </div>
+                        <div class="qa-details">До какого числа выдают призы </div>
+                      </div>
+                      <div class="qa-item">
+                        <div class="qa-title">До какого числа выдают призы </div>
+                        <div class="qa-details">До какого числа выдают призы </div>
+                      </div>
+                      <div class="qa-item">
+                        <div class="qa-title">В какие сроки проводится Акция?</div>
+                        <div class="qa-details">До какого числа выдают призы </div>
+                      </div>
+                      <div class="qa-item">
+                        <div class="qa-title">Как я узнаю что стал участником акции?</div>
+                        <div class="qa-details">До какого числа выдают призы </div>
+                      </div>
+                      <div class="qa-item">
+                        <div class="qa-title">Как я узнаю что стал участником акции?</div>
+                        <div class="qa-details">До какого числа выдают призы </div>
+                      </div>
+                      <div class="qa-item">
+                        <div class="qa-title">Как я узнаю что стал участником акции?</div>
+                        <div class="qa-details">До какого числа выдают призы </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mt-24 mt-lg-0"> 
+                  <div class="contact-form">
+                    <h3>Задать вопрос</h3>
+                    <p class="fw-16">Наши специалисты ответят на него в ближайшее время</p>
+                    <form class="validate mt-10" action=""> 
+                      <div class="col-sm-12 mb-24">
+                        <input class="form-control" type="text" placeholder="Отчество" required>
+                        <div class="invalid-feedback">ФИО</div>
+                      </div>
+                      <div class="col-sm-12 mb-24">
+                        <input class="form-control" type="text" placeholder="E-mail" required>
+                        <div class="invalid-feedback">E-mail</div>
+                      </div>
+                      <div class="col-sm-12 mb-24">
+                        <textarea class="form-control" type="text" placeholder="E-mail" required></textarea>
+                        <div class="invalid-feedback">E-mail</div>
+                      </div>
+                      <div class="col-sm-12 mb-6">
+                        <label class="checkbox">
+                          <input class="radio-input mr-10" type="checkbox" required><span class="checkbox__text" style="font-size:13px;color:white">Я согласен (-а)  на обработку персональных данных </span>
+                          <div class="invalid-feedback">Подтвердите согласие с пользовательским соглашением и политикой конфиденциальности</div>
+                        </label>
+                      </div>
+                      <div class="col-sm-12 mb-6">
+                        <button class="btn btn-black-fill w-100 mt-12" type="submit"> Зарегистрироваться           </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-12">
+              <P class="fs-12 c-black">Общий срок проведения акции с 10 июня 2024 года по 30 сентября 2024 года. Период выполнения условий участия: с 10 июня 2024 года по 31 августа 2024. Правила акции, информацию об Организаторе акции, порядке и условиях её проведения можно узнать на Сайте psapromo.ru. Организатор акции – ООО «ПЕЖО СИТРОЕН РУС», Оператор акции – ООО «Ай-экшн».</P>
+            </div>
+            <div class="col-md-8 col-lg-9 footer-links"><a class="fs-12 c-black" href="upload/">Правила акции</a><a class="fs-12 c-black" href="upload/">Политика конфиденциальности</a><a class="fs-12 c-black" href="upload/">Согласие на обработку персональных данных </a><a class="fs-12 c-black" href="upload/">Список Дистрибьюторов</a></div>
+            <div class="col-md-4 col-lg-3"><span class="fs-12 c-black text-md-end d-block mt-16 mt-md-0">Служба поддержки: <a class="c-orange" href="upload/">info@psapromo.ru</a></span></div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal" id="modal-enter">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><img src="img/icons/close.svg" alt="close-ic"/>
+              </button>
+              <div class="modal-title">Вход</div>
+              <form class="row needs-validation" novalidate>
+                <div class="col-12 mb-24">
+                  <input class="form-control" type="email" placeholder="E-mail" required>
+                  <div class="invalid-feedback">Введите e-mail</div>
+                </div>
+                <div class="col-12 mb-24">
+                  <input class="form-control" type="password" placeholder="Пароль" required>
+                  <div class="invalid-feedback">Введите пароль</div><a class="js-change-modal modal-link text-end" href="#modal-recovery">Забыли пароль? </a>
+                </div>
+                <div class="col-12 mb-24">
+                  <button class="btn btn-black-fill w-100" type="submit">Войти в кабинет</button>
+                </div>
+                <div class="col-12"> <a class="js-change-modal modal-link text-center" href="#modal-reg"> Зарегистрироваться</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-reg">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><img src="img/icons/close.svg" alt="close-ic"/>
+              </button>
+              <div class="modal-title"> Регистрация</div>
+              <form class="row needs-validation" novalidate>
+                <div class="col-sm-6 mb-md-24 mb-12">
+                  <input class="form-control" type="text" placeholder="Наименование торговой точки" required>
+                  <div class="invalid-feedback">Введите наименование торговой точки</div>
+                </div>
+                <div class="col-sm-6 mb-md-24 mb-12">
+                  <input class="form-control" type="text" placeholder="ИНН торговой точки" required>
+                  <div class="invalid-feedback">Введите ИНН торговой точки</div>
+                </div>
+                <div class="col-sm-6 mb-md-24 mb-12">
+                  <input class="form-control" type="text" placeholder="Адрес торговой точки" required>
+                  <div class="invalid-feedback">Введите адрес торговой точки</div>
+                </div>
+                <div class="col-sm-6 mb-md-24 mb-12">
+                  <input class="form-control" type="email" placeholder="Контактный Email" required>
+                  <div class="invalid-feedback">Введите контактный Email</div>
+                </div>
+                <div class="col-sm-12 mb-md-24 mb-12">
+                  <select class="form-select" type="select" required aria-label="Статус">
+                    <option value="1" selected disabled>Статус</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  <div class="invalid-feedback">Выберите из списка</div>
+                </div>
+                <div class="add-distr-block">
+                  <div class="col-sm-6 mb-md-24 mb-12">
+                    <select class="form-select" type="select" required aria-label="Название дистрибьютора">
+                      <option value="1" selected disabled>Название дистрибьютора</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                    <div class="invalid-feedback">Выберите из списка</div>
+                  </div>
+                  <div class="col-sm-6 mb-md-24 mb-12">
+                    <input class="form-control" type="number" placeholder="ИНН дистрибьютора" required>
+                    <div class="invalid-feedback">Введите ИНН дистрибьютора</div>
+                  </div>
+                  <div class="col-sm-6 mb-md-24 mb-12">
+                    <input class="form-control" type="number" placeholder="ID из ЛК на сайте Дистрибьютора" required>
+                    <div class="invalid-feedback">Введите ID из ЛК на сайте Дистрибьютора</div>
+                  </div>
+                  <div class="col-sm-6 mb-md-24 mb-30">
+                    <div class="add-distr">Добавить еще дистрибьютора</div>
+                  </div>
+                </div>
+                <div class="col-sm-12 mb-6">
+                  <label class="checkbox">
+                    <input class="radio-input mr-10" type="checkbox" required><span class="checkbox__text">Я согласен (-а)  <a href="upload/" class="label-text">на обработку персональных данных </a> </span>
+                    <div class="invalid-feedback">Подтвердите согласие на на обработку персональных данных</div>
+                  </label>
+                </div>
+                <div class="col-sm-12 mb-6">
+                  <label class="checkbox">
+                    <input class="radio-input mr-10" type="checkbox" required><span class="checkbox__text">Я согласен (-а) с <a href="upload/" class="label-text">правилами акции </a> </span>
+                    <div class="invalid-feedback">Подтвердите согласие с правилами акции</div>
+                  </label>
+                </div>
+                <div class="col-sm-12 mb-6">
+                  <label class="checkbox">
+                    <input class="radio-input mr-10" type="checkbox" required><span class="checkbox__text">Я согласен (-а) с <a href="upload/" class="label-text"> пользовательским соглашением </a> </span>
+                    <div class="invalid-feedback">Подтвердите согласие с пользовательским соглашением</div>
+                  </label>
+                </div>
+                <div class="col-sm-12 mb-6">
+                  <label class="checkbox">
+                    <input class="radio-input mr-10" type="checkbox" required><span class="checkbox__text c-white">Я достиг (-ла) 18-летнего возраста</span>
+                    <div class="invalid-feedback">Подтвердите возраст</div>
+                  </label>
+                </div>
+                <div class="col-12 mt-md-24 mt-16">
+                  <button class="btn btn-black-fill mx-a" type="submit"> Зарегистрироваться</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-recovery">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><img src="img/icons/close.svg" alt="close-ic"/>
+              </button>
+              <div class="modal-title">Восстановление пароля</div>
+              <form class="row needs-validation" novalidate>
+                <div class="col-12 mb-24">
+                  <input class="form-control" type="email" placeholder="E-mail" required>
+                  <div class="invalid-feedback">Введите e-mail</div>
+                </div>
+                <div class="col-12 mb-24">
+                  <button class="btn btn-black-fill w-100" type="submit">Восстановить пароль</button>
+                </div>
+                <div class="col-12"> <a class="js-change-modal modal-link text-center" href="#modal-enter">Войти в личный кабинет</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-success-reg">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><img src="img/icons/close.svg" alt="close-ic"/>
+              </button>
+              <div class="modal-title"> Регистрация прошла успешно!</div>
+              <div class="row mt-12">
+                <div class="col-12"> 
+                  <P class="text-center c-black">На указанный вами e-mail отправлен новый пароль для доступа в личный кабинет</P>
+                </div>
+                <div class="col-12 mt-30"> <a class="btn btn-black-fill w-100 js-change-modal" href="#modal-enter">Войти в кабинет</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-error">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><img src="img/icons/close.svg" alt="close-ic"/>
+              </button>
+              <div class="modal-title"> <span class="gold-text-linear">Ошибка!</span></div>
+              <div class="row">
+                <div class="col-12"> 
+                  <p class="text-center c-black">Для доступа к данной странице вы должны быть авторизованы!</p>
+                </div>
+                <div class="col-12 mt-30"> <a class="btn btn-black-fill mx-a js-change-modal" type="button" href="#modal-enter">войти в личный кабинет</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script src="libs/datepicker-bootstrap/js/datepicker.js"></script>
+    <script src="libs/datepicker-bootstrap/js/datepicker.ru-RU.js"></script>
+    <script src="libs/bootstrap-fileinput/js/locales/ru.js"></script>
+    <script src="libs/DataTables/datatables.min.js"></script>
+    <script src="libs/croppie/croppie.min.js"></script>
+    <script src="libs/jquery.maskedinput.min.js"></script>
+    <script src="libs/parallax/tweenmax.min.js"></script>
+    <script src="libs/parallax/jquery-parallax.js"></script>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/fancybox/fancybox.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+</html>

@@ -1,0 +1,133 @@
+.modal#modal-enter
+      .modal-dialog.modal-dialog-centered
+            .modal-content
+                  .modal-body
+                        button(type="button" data-bs-dismiss="modal" aria-label="Close").close
+                              +img('icons/close.svg', 'close-ic')
+                        .modal-title Вход
+                        form.row.needs-validation(novalidate)
+                              .col-12.mb-24
+                                    input( type="email" placeholder="E-mail" required ).form-control
+                                    .invalid-feedback Введите e-mail
+                              .col-12.mb-24
+                                    input(type="password" placeholder="Пароль" required ).form-control
+                                    .invalid-feedback Введите пароль
+                                    a(href="#modal-recovery").js-change-modal.modal-link.text-end Забыли пароль? 
+                              .col-12.mb-24
+                                    button.btn.btn-black-fill.w-100(type="submit") Войти в кабинет
+                              .col-12 
+                                    a(href="#modal-reg").js-change-modal.modal-link.text-center  Зарегистрироваться
+
+//- /.modal
+//- .show(style="display:block")//
+.modal#modal-reg
+      .modal-dialog.modal-lg.modal-dialog-centered
+            .modal-content
+                  .modal-body
+                        button(type="button" data-bs-dismiss="modal" aria-label="Close").close
+                              +img('icons/close.svg', 'close-ic')
+                        .modal-title  Регистрация
+                        form.row.needs-validation(novalidate)
+                              .col-sm-6.mb-md-24.mb-12
+                                    input(type="text" placeholder="Наименование торговой точки" required ).form-control
+                                    .invalid-feedback Введите наименование торговой точки
+                              .col-sm-6.mb-md-24.mb-12
+                                    input(type="text" placeholder="ИНН торговой точки" required ).form-control
+                                    .invalid-feedback Введите ИНН торговой точки
+                              .col-sm-6.mb-md-24.mb-12
+                                    input(type="text" placeholder="Адрес торговой точки" required ).form-control
+                                    .invalid-feedback Введите адрес торговой точки
+                              .col-sm-6.mb-md-24.mb-12
+                                    input(type="email" placeholder="Контактный Email"  required ).form-control
+                                    .invalid-feedback Введите контактный Email
+                              .col-sm-12.mb-md-24.mb-12
+                                    select(type="select"  required aria-label="Статус" ).form-select
+                                          option(value="1" selected disabled) Статус
+                                          option(value="2") 2
+                                          option(value="3") 3
+                                    .invalid-feedback Выберите из списка
+                              div.add-distr-block
+                                    .col-sm-6.mb-md-24.mb-12
+                                          select(type="select"  required aria-label="Название дистрибьютора" ).form-select
+                                                option(value="1" selected disabled) Название дистрибьютора
+                                                option(value="2") 2
+                                                option(value="3") 3
+                                          .invalid-feedback Выберите из списка
+                                    .col-sm-6.mb-md-24.mb-12
+                                          input(type="number" placeholder="ИНН дистрибьютора" required ).form-control
+                                          .invalid-feedback Введите ИНН дистрибьютора
+                                    .col-sm-6.mb-md-24.mb-12
+                                          input(type="number" placeholder="ID из ЛК на сайте Дистрибьютора" required ).form-control
+                                          .invalid-feedback Введите ID из ЛК на сайте Дистрибьютора
+                                    .col-sm-6.mb-md-24.mb-30
+                                          .add-distr Добавить еще дистрибьютора
+
+                              .col-sm-12.mb-6
+                                    label.checkbox
+                                          input(type="checkbox" required).radio-input.mr-10
+                                          span.checkbox__text Я согласен (-а)  <a href="upload/" class="label-text">на обработку персональных данных </a> 
+                                          .invalid-feedback Подтвердите согласие на на обработку персональных данных
+                              .col-sm-12.mb-6
+                                    label.checkbox
+                                          input(type="checkbox" required).radio-input.mr-10
+                                          span.checkbox__text Я согласен (-а) с <a href="upload/" class="label-text">правилами акции </a> 
+                                          .invalid-feedback Подтвердите согласие с правилами акции
+                              .col-sm-12.mb-6
+                                    label.checkbox
+                                          input(type="checkbox" required).radio-input.mr-10
+                                          span.checkbox__text Я согласен (-а) с <a href="upload/" class="label-text"> пользовательским соглашением </a> 
+                                          .invalid-feedback Подтвердите согласие с пользовательским соглашением
+                              .col-sm-12.mb-6
+                                    label.checkbox
+                                          input(type="checkbox" required).radio-input.mr-10
+                                          span.checkbox__text.c-white Я достиг (-ла) 18-летнего возраста
+                                          .invalid-feedback Подтвердите возраст
+                              .col-12.mt-md-24.mt-16
+                                    button.btn.btn-black-fill.mx-a(type="submit")  Зарегистрироваться
+
+
+.modal#modal-recovery
+      .modal-dialog.modal-dialog-centered
+            .modal-content
+                  .modal-body
+                        button(type="button" data-bs-dismiss="modal" aria-label="Close").close
+                              +img('icons/close.svg', 'close-ic')
+                        .modal-title Восстановление пароля
+                        form.row.needs-validation(novalidate)
+                              .col-12.mb-24
+                                    input( type="email" placeholder="E-mail" required ).form-control
+                                    .invalid-feedback Введите e-mail
+                              .col-12.mb-24
+                                    button.btn.btn-black-fill.w-100(type="submit") Восстановить пароль
+                              .col-12 
+                                    a(href="#modal-enter").js-change-modal.modal-link.text-center Войти в личный кабинет
+
+.modal#modal-success-reg
+      .modal-dialog.modal-dialog-centered
+            .modal-content
+                  .modal-body
+                        button(type="button" data-bs-dismiss="modal" aria-label="Close").close
+                              +img('icons/close.svg', 'close-ic')
+                        .modal-title  Регистрация прошла успешно!
+                        .row.mt-12
+                              .col-12 
+                                    P.text-center.c-black На указанный вами e-mail отправлен новый пароль для доступа в личный кабинет
+                              .col-12.mt-30 
+                                    a.btn.btn-black-fill.w-100.js-change-modal( href="#modal-enter") Войти в кабинет
+
+
+
+.modal#modal-error
+      .modal-dialog.modal-dialog-centered
+            .modal-content
+                  .modal-body
+                        button(type="button" data-bs-dismiss="modal" aria-label="Close").close
+                              +img('icons/close.svg', 'close-ic')
+                        .modal-title 
+                              span.gold-text-linear Ошибка!
+                        .row
+                              .col-12 
+                                    p.text-center.c-black Для доступа к данной странице вы должны быть авторизованы!
+                              .col-12.mt-30 
+                                    a.btn.btn-black-fill.mx-a.js-change-modal(type="button" href="#modal-enter" ) войти в личный кабинет
+

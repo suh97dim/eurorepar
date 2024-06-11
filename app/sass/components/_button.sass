@@ -1,0 +1,75 @@
+
+.btn
+    padding: 22px 35px
+    text-align: center
+    font-size: 18px
+    text-transform: uppercase
+    border-radius: 0
+    font-weight: 600
+    display: block
+    width: max-content
+
+
+.btn-white-border
+    border: 1px solid $white
+    color: $white
+    &:hover
+        color: $white
+        background-color: $orange
+.btn-orange-border
+    border: 1px solid $orange
+    color: $orange
+    &:hover
+        color: $white
+        background-color: $orange
+
+.btn-black-fill
+    background-color: $black
+    color: $white
+    &:hover
+        color: $black
+        background-color: none
+        border: 1px solid $black
+
+.btn-orange-fill
+    background-color: $orange
+    color: $white
+    &:hover
+        color: $black
+        background-color: none
+        border: 1px solid $black
+.btn-orange-fill.disable
+        opacity: 0.5
+        &:hover
+            background-color: $orange
+            color: $white
+            border: 1px solid $orange
+        
+   
+
+@media screen and (max-width: 1440px)
+    .btn
+        padding: 16px 25px
+
+@media screen and (max-width: 768px)
+    .btn
+        padding: 12px 20px
+        text-align: center
+        font-size: 14px
+        text-transform: uppercase
+        border-radius: 0  
+
+@media screen and (max-width: 575px)
+    .page-header
+        .btn
+            padding: 10px 16px
+            text-align: center
+            font-size: 12px
+            text-transform: uppercase
+            border-radius: 0    
+    .btn
+        padding: 14px 20px
+        text-align: center
+        font-size: 14px
+        text-transform: uppercase
+        border-radius: 0         

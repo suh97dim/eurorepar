@@ -1,0 +1,18 @@
+header.page-header
+	.container.header-container 
+		.row.ai-c.jc-sb
+			.col-auto
+				a(href='/')
+					+img('logo.svg','Логотип','logo-img')
+
+			.col-auto
+				if page == 'index'
+					a.btn.btn-white-border(type="button" data-bs-toggle="modal" data-bs-target="#modal-enter")
+						span Личный кабинет
+				else 
+					a.btn.btn-white-border(href="#" onclick="logout();")
+						+img('icons/user.svg','','mr-10','выйти')
+						span ЕВгения
+
+
+

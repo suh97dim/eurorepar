@@ -1,0 +1,17 @@
+extends /layout/page
+
+block title
+    title Главная страница
+
+block variables
+    - var page = 'index'
+block content
+    .container.mt-45
+        .row
+            .col-sm-12
+                p.ml-5.c-white Период проведения: с 10 июня 2024 года по 31 августа 2024 года
+                .main-text.mt-30.c-black Покупайте <br> запчасти Eurorepar 
+                .main-text.mt-10.mt-sm-20.c-white Получайте <br> подарки!
+                a.btn.btn-black-fill.mt-lg-40.mt-sm-30.mt-20.mt-xl-60(type="button" data-bs-toggle="modal" data-bs-target="#modal-enter") Принять участие
+    +img('main-img.png','',' main-img','')
+    +img('main-img-phone.png','',' main-img-phone','')

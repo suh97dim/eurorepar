@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="msapplication-TileColor" content="undefined">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="msapplication-TileImage" content="">
+    <meta name="theme-color" content="undefined">
+    <meta name="msapplication-navbutton-color" content="undefined">
+    <meta name="apple-mobile-web-app-status-bar-style" content="undefined">
+    <meta name="description" content="undefined">
+    <title>Главная страница</title>
+    <link type="image/x-icon" href="favicon.ico" rel="icon">
+    <link type="image/svg+xml" href="#" rel="icon">
+    <link href="#" rel="apple-touch-icon">
+    <link href="#" color="undefined" rel="mask-icon">
+    <link type="text/css" href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="libs/datepicker-bootstrap/datepicker.min.css" rel="stylesheet">
+    <link type="text/css" href="libs/croppie/croppie.css" rel="stylesheet">
+    <link type="text/css" href="libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link type="text/css" href="libs/fancybox/fancybox.css" rel="stylesheet">
+    <link type="text/css" href="css/main.min.css" rel="stylesheet">
+    <body>
+      <header class="page-header">
+        <div class="container header-container"> 
+          <div class="row ai-c jc-sb">
+            <div class="col-auto"><a href="/"><img class="logo-img" src="img/logo.svg" alt="Логотип"/></a></div>
+            <div class="col-auto"><a class="btn btn-white-border" type="button" data-bs-toggle="modal" data-bs-target="#modal-enter"><span>Личный кабинет</span></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container mt-45">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="ml-5 c-white">Период проведения: с 10 июня 2024 года по 31 августа 2024 года</p>
+            <div class="main-text mt-30 c-black">Покупайте <br> запчасти Eurorepar </div>
+            <div class="main-text mt-10 mt-sm-20 c-white">Получайте <br> подарки!</div><a class="btn btn-black-fill mt-lg-40 mt-sm-30 mt-20 mt-xl-60" type="button" data-bs-toggle="modal" data-bs-target="#modal-enter">Принять участие</a>
+          </div>
+        </div>
+      </div><img class=" main-img" src="img/main-img.webp" alt=""/><img class=" main-img-phone" src="img/main-img-phone.webp" alt=""/>
+      <footer class="footer">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-12">
+              <P class="fs-12 c-black">Общий срок проведения акции с 10 июня 2024 года по 30 сентября 2024 года. Период выполнения условий участия: с 10 июня 2024 года по 31 августа 2024. Правила акции, информацию об Организаторе акции, порядке и условиях её проведения можно узнать на Сайте psapromo.ru. Организатор акции – ООО «ПЕЖО СИТРОЕН РУС», Оператор акции – ООО «Ай-экшн».</P>
+            </div>
+            <div class="col-md-8 col-lg-9 footer-links"><a class="fs-12 c-black" href="upload/">Правила акции</a><a class="fs-12 c-black" href="upload/">Политика конфиденциальности</a><a class="fs-12 c-black" href="upload/">Согласие на обработку персональных данных </a><a class="fs-12 c-black" href="upload/">Список Дистрибьюторов</a></div>
+            <div class="col-md-4 col-lg-3"><span class="fs-12 c-black text-md-end d-block mt-16 mt-md-0">Служба поддержки: <a class="c-orange" href="upload/">info@psapromo.ru</a></span></div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal" id="modal-enter">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><img src="img/icons/close.svg" alt="close-ic"/>
+              </button>
+              <div class="modal-title">Вход</div>
+              <form class="row needs-validation" novalidate>
+                <div class="col-12 mb-24">
+                  <input class="form-control" type="email" placeholder="E-mail" required>
+                  <div class="invalid-feedback">Введите e-mail</div>
+                </div>
+                <div class="col-12 mb-24">
+                  <input class="form-control" type="password" placeholder="Пароль" required>
+                  <div class="invalid-feedback">Введите пароль</div><a class="js-change-modal modal-link text-end" href="#modal-recovery">Забыли пароль? </a>
+                </div>
+                <div class="col-12 mb-24">
+                  <button class="btn btn-black-fill w-100" type="submit">Войти в кабинет</button>
+                </div>
+                <div class="col-12"> <a class="js-change-modal modal-link text-center" href="#modal-reg"> Зарегистрироваться</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-reg">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><img src="img/icons/close.svg" alt="close-ic"/>
+              </button>
+              <div class="modal-title"> Регистрация</div>
+              <form class="row needs-validation" novalidate>
+                <div class="col-sm-6 mb-md-24 mb-12">
+                  <input class="form-control" type="text" placeholder="Наименование торговой точки" required>
+                  <div class="invalid-feedback">Введите наименование торговой точки</div>
+                </div>
+                <div class="col-sm-6 mb-md-24 mb-12">
+                  <input class="form-control" type="text" placeholder="ИНН торговой точки" required>
+                  <div class="invalid-feedback">Введите ИНН торговой точки</div>
+                </div>
+                <div class="col-sm-6 mb-md-24 mb-12">
+                  <input class="form-control" type="text" placeholder="Адрес торговой точки" required>
+                  <div class="invalid-feedback">Введите адрес торговой точки</div>
+                </div>
+                <div class="col-sm-6 mb-md-24 mb-12">
+                  <input class="form-control" type="email" placeholder="Контактный Email" required>
+                  <div class="invalid-feedback">Введите контактный Email</div>
+                </div>
+                <div class="col-sm-12 mb-md-24 mb-12">
+                  <select class="form-select" type="select" required aria-label="Статус">
+                    <option value="1" selected disabled>Статус</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  <div class="invalid-feedback">Выберите из списка</div>
+                </div>
+                <div class="add-distr-block">
+                  <div class="col-sm-6 mb-md-24 mb-12">
+                    <select class="form-select" type="select" required aria-label="Название дистрибьютора">
+                      <option value="1" selected disabled>Название дистрибьютора</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                    <div class="invalid-feedback">Выберите из списка</div>
+                  </div>
+                  <div class="col-sm-6 mb-md-24 mb-12">
+                    <input class="form-control" type="number" placeholder="ИНН дистрибьютора" required>
+                    <div class="invalid-feedback">Введите ИНН дистрибьютора</div>
+                  </div>
+                  <div class="col-sm-6 mb-md-24 mb-12">
+                    <input class="form-control" type="number" placeholder="ID из ЛК на сайте Дистрибьютора" required>
+                    <div class="invalid-feedback">Введите ID из ЛК на сайте Дистрибьютора</div>
+                  </div>
+                  <div class="col-sm-6 mb-md-24 mb-30">
+                    <div class="add-distr">Добавить еще дистрибьютора</div>
+                  </div>
+                </div>
+                <div class="col-sm-12 mb-6">
+                  <label class="checkbox">
+                    <input class="radio-input mr-10" type="checkbox" required><span class="checkbox__text">Я согласен (-а)  <a href="upload/" class="label-text">на обработку персональных данных </a> </span>
+                    <div class="invalid-feedback">Подтвердите согласие на на обработку персональных данных</div>
+                  </label>
+                </div>
+                <div class="col-sm-12 mb-6">
+                  <label class="checkbox">
+                    <input class="radio-input mr-10" type="checkbox" required><span class="checkbox__text">Я согласен (-а) с <a href="upload/" class="label-text">правилами акции </a> </span>
+                    <div class="invalid-feedback">Подтвердите согласие с правилами акции</div>
+                  </label>
+                </div>
+                <div class="col-sm-12 mb-6">
+                  <label class="checkbox">
+                    <input class="radio-input mr-10" type="checkbox" required><span class="checkbox__text">Я согласен (-а) с <a href="upload/" class="label-text"> пользовательским соглашением </a> </span>
+                    <div class="invalid-feedback">Подтвердите согласие с пользовательским соглашением</div>
+                  </label>
+                </div>
+                <div class="col-sm-12 mb-6">
+                  <label class="checkbox">
+                    <input class="radio-input mr-10" type="checkbox" required><span class="checkbox__text c-white">Я достиг (-ла) 18-летнего возраста</span>
+                    <div class="invalid-feedback">Подтвердите возраст</div>
+                  </label>
+                </div>
+                <div class="col-12 mt-md-24 mt-16">
+                  <button class="btn btn-black-fill mx-a" type="submit"> Зарегистрироваться</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-recovery">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><img src="img/icons/close.svg" alt="close-ic"/>
+              </button>
+              <div class="modal-title">Восстановление пароля</div>
+              <form class="row needs-validation" novalidate>
+                <div class="col-12 mb-24">
+                  <input class="form-control" type="email" placeholder="E-mail" required>
+                  <div class="invalid-feedback">Введите e-mail</div>
+                </div>
+                <div class="col-12 mb-24">
+                  <button class="btn btn-black-fill w-100" type="submit">Восстановить пароль</button>
+                </div>
+                <div class="col-12"> <a class="js-change-modal modal-link text-center" href="#modal-enter">Войти в личный кабинет</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-success-reg">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><img src="img/icons/close.svg" alt="close-ic"/>
+              </button>
+              <div class="modal-title"> Регистрация прошла успешно!</div>
+              <div class="row mt-12">
+                <div class="col-12"> 
+                  <P class="text-center c-black">На указанный вами e-mail отправлен новый пароль для доступа в личный кабинет</P>
+                </div>
+                <div class="col-12 mt-30"> <a class="btn btn-black-fill w-100 js-change-modal" href="#modal-enter">Войти в кабинет</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-error">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><img src="img/icons/close.svg" alt="close-ic"/>
+              </button>
+              <div class="modal-title"> <span class="gold-text-linear">Ошибка!</span></div>
+              <div class="row">
+                <div class="col-12"> 
+                  <p class="text-center c-black">Для доступа к данной странице вы должны быть авторизованы!</p>
+                </div>
+                <div class="col-12 mt-30"> <a class="btn btn-black-fill mx-a js-change-modal" type="button" href="#modal-enter">войти в личный кабинет</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script src="libs/datepicker-bootstrap/js/datepicker.js"></script>
+    <script src="libs/datepicker-bootstrap/js/datepicker.ru-RU.js"></script>
+    <script src="libs/bootstrap-fileinput/js/locales/ru.js"></script>
+    <script src="libs/DataTables/datatables.min.js"></script>
+    <script src="libs/croppie/croppie.min.js"></script>
+    <script src="libs/jquery.maskedinput.min.js"></script>
+    <script src="libs/parallax/tweenmax.min.js"></script>
+    <script src="libs/parallax/jquery-parallax.js"></script>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/fancybox/fancybox.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+</html>
